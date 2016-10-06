@@ -1,115 +1,60 @@
-<!DOCTYPE html>
-<html>
 
-    <head>
-        <meta charset="utf-8"/>
-        <title>Checkers Game</title>
+<html><head><title>Umoja</title></head>
+<body>
+  <h1>Stallone Eu's Page</h1><h2>A Page for Web Programming</h2>
+
+<img src="https://v.cdn.vine.co/r/avatars/D83AED53B91359045781331615744_53fc1b59537.25.1.jpg?versionId=SM77bNlpfmRUM3SnPdYtFvm3yPB2V8pH" height="200">
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<ul>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ul>
+
+<a href="http://www.google.com/search?q=new+jeans"> Elgoog </a>
+
+  <p><span id="bolded">
+      Yo waddup! Dis my paragraff. Im codin a wepbage but I rlly wanna be a rapper. On the screet they call me lil Boaty. I wanna be like Chief Keef cuz I hate bein sober thats for damn sure.
+      </p>
+  <br>
   
-    </head>
-            <h1>Checkerboard</h1>
-    
-    <body>        
-        
-        <p><button onclick="Pieces()">Start Game</button></p>
+  <form action="http://grid.cs.gsu.edu/~cumoja1/" method="GET">
+  <input type="text" name="u" id="uname">Username</input>
+  <input type="password" name="p" id="pass">Password</input>
+  <input type="submit" value="Submit"></input>
+  </form>
 
-        <script src="./red_shirt.js" type="text/javascript"></script>
-        
-        <script>
-            var canvas = document.createElement('canvas');
-            canvas.width = canvas.height = 320;
-            var context = canvas.getContext('2d');
-            
-            
-//makes the checkerboard            
-        for (var x = 0; x < 8; x++) for (var y = 0; y < 8; y++) {
-             context.fillStyle = (x + y) % 2 ? 'red' : 'black';
-             context.fillRect(40 * x, 40 * y, 40, 40)
-             context.beginPath();
-        }
-            
-            document.body.appendChild(canvas);
-            
-//first row of pieces "Black"            
-         for (var x = 60; x < 320; x+= 80){
-            context.beginPath();
-            context.fillStyle = "Black";
-            context.arc(x, 20, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-            
-        }           
-            document.body.appendChild(canvas);  
-            
-//second row of pieces "Black"            
-            
-         for (var x = 20; x < 340; x+= 80){
-            context.beginPath();
-            context.fillStyle = "Black";
-            context.arc(x, 60, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-            
-        }           
-            document.body.appendChild(canvas);
-            
-//third row of pieces "Black"            
-            
-         for (var x = 60; x < 320; x+= 80){
-            context.beginPath();
-            context.fillStyle = "Black";
-            context.arc(x, 100, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-            
-        }           
-            document.body.appendChild(canvas);  
-            
- //first row of pieces "Red"           
-        for (var y = 60; y < 320; y+= 80){
-            context.beginPath();
-            context.fillStyle = "Red";
-            context.arc(y, 220, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-        }             
-            document.body.appendChild(canvas);  
-            
-//second row of pieces "Red"            
-        for (var y = 20; y < 320; y+= 80){
-            context.beginPath();
-            context.fillStyle = "Red";
-            context.arc(y, 260, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-            
-        }           
-            document.body.appendChild(canvas);  
-            
-//third row pieces "Red"            
-        for (var y = 60; y < 320; y+= 80){
-            context.beginPath();
-            context.fillStyle = "Red";
-            context.arc(y, 300, 15, 0, 2 * Math.PI);
-            context.stroke();
-            context.fill();
-            
-        }             
-            document.body.appendChild(canvas);      
-            
-            
-            
-        
-            
-        
-        </script>
-        
 
-    </body>
-        
+<!-- Dont use tables, frames in this class, you won;t lose any points, I just hop[e better for you -->
 
+  <table>
+    <thead><th></th><th> Tic-Tac-Toe</th><th/> </thead>
+    <tbody>
+<tr><th>X</th> <th>O</th> <th>X</th>  </tr>
+<tr><th>X</th> <th>X</th> <th>O</th>  </tr>
+<tr><th>O</th> <th>X</th> <th>O</th>  </tr>
+  </tbody></table>
+
+<ul id="tictac">
+  <li>X</li>
+  <li>O</li>
+  <li>X</li>
+
+  <li>X</li>
+  <li>X</li>
+  <li>O</li>
+
+  <li>O</li>
+  <li>X</li>
+  <li>O</li>
+</ul>
+
+
+
+</body>
 </html>
